@@ -255,7 +255,7 @@ def pass1(list_of_lines):
             commandArray = trimmed.split()
             opCode(commandArray)
             register_update(outputVar, commandArray)
-            print(outputVar)
+            print(*outputVar, sep='')
             if trimmed == 'hlt':
                 break
 
